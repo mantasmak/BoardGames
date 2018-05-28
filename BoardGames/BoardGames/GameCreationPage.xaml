@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage Title="Create New Game"
+             xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BoardGames.GameCreationPage">
+    <StackLayout>
+        <TableView Intent="Form">
+            <TableRoot>
+                <TableSection Title="Game Details" >
+                    <EntryCell x:Name="roomName" Label="Room Name" />
+                    <EntryCell x:Name="gameName" Label="Game Name" />
+                    <EntryCell x:Name="location" Label="Location" />
+                    <EntryCell x:Name="minPlayer" Label="Minimum Player Amount" Keyboard="Numeric" />
+                    <EntryCell x:Name="maxPlayer" Label="Maximum Player Amount" Keyboard="Numeric" />
+                    <ViewCell>
+                        <StackLayout Orientation="Horizontal" Padding="13, 0">
+                            <Label Text="Date" VerticalOptions="Center" />
+                            <DatePicker x:Name="datePicker" HorizontalOptions="EndAndExpand" />
+                        </StackLayout>
+                    </ViewCell>
+                    <ViewCell>
+                        <StackLayout Orientation="Horizontal" Padding="13, 0">
+                            <Label Text="Time" VerticalOptions="Center" />
+                            <TimePicker x:Name="timePicker" HorizontalOptions="EndAndExpand" />
+                        </StackLayout>
+                    </ViewCell>
+                </TableSection>
+            </TableRoot>
+        </TableView>
+        <Button Text="Create" AbsoluteLayout.LayoutBounds="0.5, 1, 0.8, 0.1" AbsoluteLayout.LayoutFlags="All" Clicked="Handle_Clicked"/>
+    </StackLayout>
+</ContentPage>

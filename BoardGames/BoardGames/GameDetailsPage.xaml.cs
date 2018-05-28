@@ -1,0 +1,25 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+using Xamarin.Forms;
+using Xamarin.Forms.Xaml;
+
+namespace BoardGames
+{
+	[XamlCompilation(XamlCompilationOptions.Compile)]
+	public partial class GameDetailsPage : ContentPage
+	{
+		public GameDetailsPage (Game game)
+		{
+            if (game == null)
+                throw new ArgumentNullException();
+
+            BindingContext = game;
+
+			InitializeComponent ();
+		}
+	}
+}

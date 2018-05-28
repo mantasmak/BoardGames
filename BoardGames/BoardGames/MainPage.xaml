@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage NavigationPage.HasNavigationBar="False"
+             xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:BoardGames"
+             x:Class="BoardGames.MainPage">
+    <AbsoluteLayout>
+        <BoxView Color="Blue"
+                 AbsoluteLayout.LayoutBounds="0, 0, 1, 0.3"
+                 AbsoluteLayout.LayoutFlags="SizeProportional" />
+
+        <Label Text="BOARD GAMES"
+               FontSize="40"
+               TextColor="White"
+               FontAttributes="Bold"
+               HorizontalOptions="Center"
+               VerticalOptions="Center"
+               AbsoluteLayout.LayoutBounds="0, 0, 1, 0.3"
+               AbsoluteLayout.LayoutFlags="All"/>
+
+
+        <StackLayout HorizontalOptions="Center" VerticalOptions="Center" AbsoluteLayout.LayoutBounds="0, 0.3, 1, 1" AbsoluteLayout.LayoutFlags="All">
+            <Button Text="Game Sessions" 
+                    Clicked="Handle_Clicked1"/>
+
+            <Button Text="User Profile" />
+
+            <Button Text="Friends List" />
+        </StackLayout>
+    </AbsoluteLayout>
+
+</ContentPage>

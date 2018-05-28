@@ -1,0 +1,15 @@
+C:\Users\Mantas\source\repos\BoardGames\BoardGames\BoardGames\bin\Debug\netstandard2.0\BoardGames.deps.json
+C:\Users\Mantas\source\repos\BoardGames\BoardGames\BoardGames\bin\Debug\netstandard2.0\BoardGames.dll
+C:\Users\Mantas\source\repos\BoardGames\BoardGames\BoardGames\bin\Debug\netstandard2.0\BoardGames.pdb
+C:\Users\Mantas\source\repos\BoardGames\BoardGames\BoardGames\obj\Debug\netstandard2.0\BoardGames.csprojResolveAssemblyReference.cache
+C:\Users\Mantas\source\repos\BoardGames\BoardGames\BoardGames\obj\Debug\netstandard2.0\BoardGames.csproj.CoreCompileInputs.cache
+C:\Users\Mantas\source\repos\BoardGames\BoardGames\BoardGames\obj\Debug\netstandard2.0\BoardGames.App.xaml.g.cs
+C:\Users\Mantas\source\repos\BoardGames\BoardGames\BoardGames\obj\Debug\netstandard2.0\BoardGames.GameCreationPage.xaml.g.cs
+C:\Users\Mantas\source\repos\BoardGames\BoardGames\BoardGames\obj\Debug\netstandard2.0\BoardGames.GameDetailsPage.xaml.g.cs
+C:\Users\Mantas\source\repos\BoardGames\BoardGames\BoardGames\obj\Debug\netstandard2.0\BoardGames.GameSessionsPage.xaml.g.cs
+C:\Users\Mantas\source\repos\BoardGames\BoardGames\BoardGames\obj\Debug\netstandard2.0\BoardGames.MainPage.xaml.g.cs
+C:\Users\Mantas\source\repos\BoardGames\BoardGames\BoardGames\obj\Debug\netstandard2.0\BoardGames.UserLogin.xaml.g.cs
+C:\Users\Mantas\source\repos\BoardGames\BoardGames\BoardGames\obj\Debug\netstandard2.0\BoardGames.AssemblyInfoInputs.cache
+C:\Users\Mantas\source\repos\BoardGames\BoardGames\BoardGames\obj\Debug\netstandard2.0\BoardGames.AssemblyInfo.cs
+C:\Users\Mantas\source\repos\BoardGames\BoardGames\BoardGames\obj\Debug\netstandard2.0\BoardGames.dll
+C:\Users\Mantas\source\repos\BoardGames\BoardGames\BoardGames\obj\Debug\netstandard2.0\BoardGames.pdb

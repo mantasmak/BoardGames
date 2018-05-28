@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage Title="Game Sessions"
+             xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BoardGames.GameSessionsPage">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Icon="plus.png" Activated="Handle_Activated"/>
+    </ContentPage.ToolbarItems>
+
+    <StackLayout>
+        <SearchBar Placeholder="Filter..." TextChanged="Handle_TextChanged" />
+        <ListView x:Name="listView" HasUnevenRows="True" ItemSelected="Handle_ItemSelected" ItemTapped="Handle_ItemTapped">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout Padding="5">
+                            <Label Text="{Binding RoomName}" FontSize="Medium" TextColor="Black" FontAttributes="Bold"/>
+                            <StackLayout Orientation="Horizontal">
+                                <Label Text="{Binding GameName}" FontSize="Small" TextColor="Gray"/>
+                                <Label Text="{Binding Location}" FontSize="Small" TextColor="Gray"/>
+                                <Label Text="{Binding Time, StringFormat='{0:yyyy/MM/dd HH:mm}'}" FontSize="Small" TextColor="Gray"/>
+                            </StackLayout>
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+</ContentPage>

@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage Title="{Binding RoomName}"
+             xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BoardGames.GameDetailsPage">
+    <AbsoluteLayout>
+        <Label Text="{Binding GameName}}" 
+               FontSize="60"
+               TextColor="Black"
+               AbsoluteLayout.LayoutBounds="0, 0, 1, 0.3"
+               AbsoluteLayout.LayoutFlags="All"
+               Margin="10, 10, 10, 10"
+               HorizontalOptions="Center"/>
+        <StackLayout HorizontalOptions="Center" AbsoluteLayout.LayoutBounds="0, 1, 1, 0.7" AbsoluteLayout.LayoutFlags="All">
+            
+            <Label Text="{Binding PlayerAmount, StringFormat='Player Amount: {0:S}'}"
+                   FontSize="20"
+                   Margin="10, 20, 20, 20" />
+            <Label Text="{Binding Location, StringFormat='Location: {0:S}'}"
+                   FontSize="20"
+                   Margin="10, 20, 20, 20" />
+            <Label Text="{Binding Time, StringFormat='Time: {0:yyyy/MM/dd HH:mm}'}"
+                   FontSize="20"
+                   Margin="10, 20, 20, 20" />
+        </StackLayout>
+        <Button Text="Join Game" 
+                AbsoluteLayout.LayoutBounds="0.5, 1, 0.8, 0.1"
+                AbsoluteLayout.LayoutFlags="All" />
+    </AbsoluteLayout>
+</ContentPage>
