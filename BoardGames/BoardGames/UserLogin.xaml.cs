@@ -17,9 +17,18 @@ namespace BoardGames
 			InitializeComponent ();
 		}
 
-        async void Handle_Clicked(object sender, EventArgs e)
+        //login mygtuko paspaudimas, reikia patikrinti ar toks vartotojas yra duombazeje
+        async void Handle_LoginClicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new MainPage());
+            string emailUsername = emailUsernameEntry.Text; //gaunam ivestus duomenis po mygtuko paspaudimo
+            string password = passwordEntry.Text;
+
+            await Navigation.PushAsync(new GameSessionsPage());     //pereinam i zaidimu sarasa
+        }
+
+        async void Handle_RegisterClicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new RegisterPage());
         }
 	}
 }

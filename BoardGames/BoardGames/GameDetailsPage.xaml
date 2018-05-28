@@ -23,7 +23,8 @@
                    FontSize="20"
                    Margin="10, 20, 20, 20" />
         </StackLayout>
-        <Button Text="Join Game" 
+        <Button Text="Join Game"
+                Clicked="Handle_Clicked"
                 AbsoluteLayout.LayoutBounds="0.5, 1, 0.8, 0.1"
                 AbsoluteLayout.LayoutFlags="All" />
     </AbsoluteLayout>

@@ -12,6 +12,8 @@ namespace BoardGames
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class GameDetailsPage : ContentPage
 	{
+        Game selectedGame;
+
 		public GameDetailsPage (Game game)
 		{
             if (game == null)
@@ -19,7 +21,21 @@ namespace BoardGames
 
             BindingContext = game;
 
+            selectedGame = game;
+
 			InitializeComponent ();
 		}
+
+        void Handle_Clicked(object sender, EventArgs e)
+        {
+            if (selectedGame.MaxPlayers > selectedGame.PlayerCount)
+            {
+                selectedGame.PlayerCount++;
+                Navigation.PopAsync();
+                return;
+            }
+
+            DisplayAlert("Error", "Maximum amount of players reached", "Cancel");
+        }
 	}
 }

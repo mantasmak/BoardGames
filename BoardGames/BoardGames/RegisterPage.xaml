@@ -1,19 +1,20 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage NavigationPage.HasNavigationBar="False"
-             xmlns="http://xamarin.com/schemas/2014/forms"
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="BoardGames.UserLogin">
+             x:Class="BoardGames.RegisterPage">
     <StackLayout Padding="40" HorizontalOptions="Center" VerticalOptions="Center">
         <Label Text="BOARD GAMES"
                FontSize="Large"
                FontAttributes="Bold" />
-        <Entry x:Name="emailUsernameEntry"
-               Placeholder="Email/Username" />
+        <Entry x:Name="emailEntry"
+               Placeholder="Email" />
+        <Entry x:Name="usernameEntry"
+               Placeholder="Username" />
         <Entry x:Name="passwordEntry"
                Placeholder="Password" IsPassword="True" />
-        <Button Text="Login"
-                Clicked="Handle_LoginClicked" />
+        <Entry x:Name="confirmPasswordEntry"
+               Placeholder="Confirm Password" IsPassword="True" />
         <Button Text="Register"
-                Clicked="Handle_RegisterClicked" />
+                Clicked="Handle_Clicked"/>
     </StackLayout>
 </ContentPage>

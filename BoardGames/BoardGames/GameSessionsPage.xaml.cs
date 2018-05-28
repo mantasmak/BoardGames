@@ -14,20 +14,19 @@ namespace BoardGames
 	{
 		public GameSessionsPage ()
 		{
-            MessagingCenter.Subscribe<GameCreationPage>(this, "Hi", (sender) => { });
-
             InitializeComponent ();
 
             listView.ItemsSource = GetGames();
 		}
 
+        //sitam metode reiketu gaut zaidimus is duombazes ir sudet i lista games
         private List<Game> GetGames(string searchText = null)
         {
             var games = new List<Game>
             {
                 new Game("My Game", "Chess", 2, 2, "Vilnius, Ilgoji g. 5", new DateTime(2018, 5, 30, 18, 30, 0)),
                 new Game("Another Game", "Monopoly", 2, 5, "Vilnius, Gedimino pr. 5", new DateTime(2018, 5, 31, 9, 0, 0)),
-                new Game("Birthday Party", "Scrabble", 2, 4, "Kaunas, Nemuno g. 22", new DateTime(2018, 6, 22, 20, 0, 0)),
+                new Game("Birthday Party", "Scrabble", 2, 4, "Kaunas, Nemuno g. 22", new DateTime(2018, 6, 22, 20, 0, 0)),      //cia pavyzdiniai duomenys
                 new Game("Join my game", "D&D", 3, 5, "Klaipėda, Pilies g. 3", new DateTime(2018, 6, 5, 17, 25, 0))
             };
 

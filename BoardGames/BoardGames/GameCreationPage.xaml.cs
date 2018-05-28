@@ -19,6 +19,7 @@ namespace BoardGames
 			InitializeComponent ();
 		}
 
+        //mygtukas create, reikia nusiust sukurta zaidima i duombaze
         void Handle_Clicked(object sender, EventArgs e)
         {
             if (String.IsNullOrWhiteSpace(roomName.Text) || String.IsNullOrWhiteSpace(gameName.Text) || String.IsNullOrWhiteSpace(minPlayer.Text) || String.IsNullOrWhiteSpace(maxPlayer.Text) || String.IsNullOrWhiteSpace(location.Text))
@@ -27,7 +28,7 @@ namespace BoardGames
                 return;
             }
 
-            newGame = new Game(roomName.Text, gameName.Text, Int32.Parse(minPlayer.Text), Int32.Parse(maxPlayer.Text), location.Text, datePicker.Date + timePicker.Time);
+            newGame = new Game(roomName.Text, gameName.Text, Int32.Parse(minPlayer.Text), Int32.Parse(maxPlayer.Text), location.Text, datePicker.Date + timePicker.Time);  //sukuriamas zaidimo objektas su ivestais duomenimis
 
             Navigation.PopAsync();
         }
